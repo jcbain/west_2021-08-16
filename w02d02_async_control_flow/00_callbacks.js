@@ -17,7 +17,13 @@ const myForEach = (arr, callback) => {
   }
 }
 
-myForEach(chickens, (element, i) => {
-  console.log(`in ${element.lang} chicken is "${element.chicken}"`)
-})
+const sayChicken = (element, i) => {
+  console.log(`my element is ${element} and my index of that element is ${i}`)
+}
+
+// sayChicken('james', 1)
+// myForEach(chickens, (element, i) => {
+//   console.log(`in ${element.lang} chicken is "${element.chicken}"`)
+// })
+myForEach(chickens, sayChicken)
 
