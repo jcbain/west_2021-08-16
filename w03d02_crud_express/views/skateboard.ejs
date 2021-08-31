@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Single Skateboard</title>
+</head>
+<body>
+  <h1>A SINGLE SKATEBOARD</h1>
+  <div>
+    <h2>color: <%= skateboard.color %></h2>
+    <h2>length: <%= skateboard.len %></h2>
+    <h2>broken: <%= skateboard.broken %></h2>
+    <form method="POST" action="/skateboards/<%= skateboardId %>/delete">
+      <button type="submit">Delete this skateboard</button>
+    </form>
+  </div>
+
+  <form method="POST" action="/skateboards/<%= skateboardId %>">
+    <label>New color:</label>
+    <input name="color" value="somevalue"/>
+    <button type="submit">change color</button>
+  </form>
+  
+</body>
+</html>

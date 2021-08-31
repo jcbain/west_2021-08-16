@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Skateboards</title>
+</head>
+<body>
+  <h1>ALL SKATEBOARDS</h1>
+  <% for(const skateboardId in skateboards) { %> 
+    <div style="border: 2px solid pink">
+      <h2>color: <%= skateboards[skateboardId].color %></h2>
+      <h2>length: <%= skateboards[skateboardId].len %></h2>
+      <h2>broken: <%= skateboards[skateboardId].broken %></h2>
+    </div>
+  <% } %>
+
+  <h2>CREATE A NEW SKATEBOARD</h2>
+  <form method="POST" action="/skateboards">
+    <label>color</label>
+    <input name="color" />
+    <br/>
+
+    <label>length</label>
+    <input name="len" />
+    <br/>
+
+    <label>broken</label>
+    <input name="broken" />
+    <br/>
+
+    <button type="submit">add new skateboard</button>
+
+  </form>
+  
+</body>
+</html>
