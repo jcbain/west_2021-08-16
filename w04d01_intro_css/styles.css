@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+h2 {
+  color: blueviolet;
+  text-decoration: underline;
+  text-decoration: overline;
+}
+
+
+h1, p {
+  color:crimson;
+  font-size: 40px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.special-text {
+  color:darksalmon;
+}
+
+h2.special-text {
+  color: goldenrod;
+}
+
+#cool-element {
+  border: 5px dotted turquoise;
+  border-radius: 5px;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+
+aside {
+  border: 5px dotted greenyellow;
+  border-radius: 10px;
+}
+
+#fav-foods p.single-fav {
+  font-size: 40px;
+}
+
